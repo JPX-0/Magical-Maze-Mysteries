@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://d13hy1nkxygxk"]
+
+[ext_resource type="Script" path="res://components/scenes/init.gd" id="1_eywek"]
+[ext_resource type="PackedScene" uid="uid://8s5khtgnlrke" path="res://components/characters/main_player/rubios.tscn" id="1_qxrld"]
+[ext_resource type="PackedScene" uid="uid://b4vrhtobhqwe1" path="res://components/scenes/gui/gui.tscn" id="1_vwl5q"]
+[ext_resource type="PackedScene" uid="uid://bc0tvhmlwgiwv" path="res://components/scenes/scene1/scene1.tscn" id="2_cwirl"]
+[ext_resource type="PackedScene" uid="uid://dqyqcivoulhie" path="res://components/scenes/scene2/scene_2.tscn" id="4_2fdl2"]
+
+[node name="init" type="Node2D"]
+script = ExtResource("1_eywek")
+
+[node name="GUI" parent="." instance=ExtResource("1_vwl5q")]
+
+[node name="Rubios" parent="." instance=ExtResource("1_qxrld")]
+position = Vector2(250, 297)
+
+[node name="Scene1" parent="." instance=ExtResource("2_cwirl")]
+unique_name_in_owner = true
+
+[node name="Scene2" parent="." instance=ExtResource("4_2fdl2")]
+unique_name_in_owner = true
+position = Vector2(880, 0)

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dgdp6i1bhgn2w"]
+
+[node name="Brigthness" type="Node2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+color = Color(0.00392157, 0.0588235, 0.164706, 1)

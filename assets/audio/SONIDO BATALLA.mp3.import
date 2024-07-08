@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deoox0c3j5ng4"
+path="res://.godot/imported/SONIDO BATALLA.mp3-cdda7a9aa11b46f6b68862cd805707be.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SONIDO BATALLA.mp3"
+dest_files=["res://.godot/imported/SONIDO BATALLA.mp3-cdda7a9aa11b46f6b68862cd805707be.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=120.0
+beat_count=199
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bg0vkh6t6ie7t"
+path="res://.godot/imported/SONIDO PASAR NIVEL.mp3-60b230c0b5374a7885eb2e010e555367.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SONIDO PASAR NIVEL.mp3"
+dest_files=["res://.godot/imported/SONIDO PASAR NIVEL.mp3-60b230c0b5374a7885eb2e010e555367.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

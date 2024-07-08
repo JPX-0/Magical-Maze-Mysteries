@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxjxo4igfbbqe"]
+
+[ext_resource type="Texture2D" uid="uid://q5cqdvynbrb3" path="res://-characters/PNG/Retina/tile_brick.png" id="1_yfifn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k21s4"]
+size = Vector2(118, 120)
+
+[node name="TileBrick" type="StaticBody2D"]
+
+[node name="Image" type="Sprite2D" parent="."]
+texture = ExtResource("1_yfifn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_k21s4")

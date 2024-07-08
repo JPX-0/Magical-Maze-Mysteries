@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4vrhtobhqwe1"]
+
+[ext_resource type="Script" path="res://components/scenes/gui/health.gd" id="1_qxvf1"]
+[ext_resource type="Texture2D" uid="uid://dn7lxyfkppfhm" path="res://assets/image/v2/frames/l0_sprite_progressbar1.png" id="2_s78lg"]
+[ext_resource type="Texture2D" uid="uid://cmi5mtidhyot1" path="res://assets/image/v2/frames/l0_sprite_progressbar2.png" id="3_nofd2"]
+[ext_resource type="Texture2D" uid="uid://bvalkfeey6ykk" path="res://assets/image/v2/frames/istockphoto-637192686.jpg" id="4_aae0j"]
+[ext_resource type="Texture2D" uid="uid://oqd1kcbgy5qa" path="res://assets/image/v2/frames/l0_sprite_progressbar3.png" id="5_ge8dl"]
+
+[node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_qxvf1")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+self_modulate = Color(0.937255, 0.541176, 0, 1)
+clip_children = 1
+visibility_layer = 513
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -174.5
+offset_top = -83.0
+offset_right = 174.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="GridContainer" type="GridContainer" parent="Control/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/h_separation = 20
+columns = 3
+
+[node name="Container" type="CenterContainer" parent="Control/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Control/PanelContainer/MarginContainer/GridContainer/Container"]
+layout_mode = 2
+size_flags_stretch_ratio = 2.0
+fill_mode = 3
+texture_under = ExtResource("2_s78lg")
+texture_progress = ExtResource("3_nofd2")
+
+[node name="Label" type="Label" parent="Control/PanelContainer/MarginContainer/GridContainer/Container"]
+layout_mode = 2
+text = "Vida
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Container2" type="CenterContainer" parent="Control/PanelContainer/MarginContainer/GridContainer/MarginContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="TextureRect" type="TextureRect" parent="Control/PanelContainer/MarginContainer/GridContainer/MarginContainer/Container2"]
+layout_mode = 2
+texture = ExtResource("4_aae0j")
+
+[node name="Container3" type="CenterContainer" parent="Control/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Control/PanelContainer/MarginContainer/GridContainer/Container3"]
+layout_mode = 2
+size_flags_stretch_ratio = 2.0
+fill_mode = 3
+texture_under = ExtResource("2_s78lg")
+texture_progress = ExtResource("5_ge8dl")
+radial_initial_angle = 45.0
+radial_fill_degrees = 0.0
+
+[node name="Label" type="Label" parent="Control/PanelContainer/MarginContainer/GridContainer/Container3"]
+layout_mode = 2
+text = "Maná
+"

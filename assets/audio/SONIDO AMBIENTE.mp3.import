@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba0r8baf5hw1l"
+path="res://.godot/imported/SONIDO AMBIENTE.mp3-f679a2123f2f9ce558492ae4f528748d.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SONIDO AMBIENTE.mp3"
+dest_files=["res://.godot/imported/SONIDO AMBIENTE.mp3-f679a2123f2f9ce558492ae4f528748d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
